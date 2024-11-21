@@ -20,14 +20,14 @@ class BalanceCard extends StatelessWidget {
             const SizedBox(height: 8),
             const Text(
               'Rp 1,000,000',
-              style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold, color: Colors.blue),
+              style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold, color: Colors.purple),
             ),
             const SizedBox(height: 8),
             ElevatedButton(
               onPressed: () {},
               child: const Text('Top Up'),
               style: ElevatedButton.styleFrom(
-                backgroundColor: Colors.blue,
+                backgroundColor: Colors.purple,
               ),
             )
           ],

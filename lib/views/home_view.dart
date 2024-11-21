@@ -9,7 +9,7 @@ class HomeView extends StatelessWidget {
     return Scaffold(
       backgroundColor: Colors.grey[100],
       appBar: AppBar(
-        backgroundColor: Colors.blue,
+        backgroundColor: Colors.purple,
         title: const Text('OVO') ,
         actions: [
           IconButton(

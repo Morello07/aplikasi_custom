@@ -26,7 +26,7 @@ class ServiceCategory extends StatelessWidget {
         return Column(
           children: [
             CircleAvatar(
-              backgroundColor: Colors.blue,
+              backgroundColor: Colors.purple,
               child: Icon(service['icon'], color: Colors.white),
             ),
             const SizedBox(height: 8),

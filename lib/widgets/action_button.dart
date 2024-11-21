@@ -18,7 +18,7 @@ class ActionButtons extends StatelessWidget {
           return Column(
             children: [
               CircleAvatar(
-                backgroundColor: Colors.blue,
+                backgroundColor: Colors.purple,
                 child: Icon(action['icon'], color: Colors.white),
               ),
               const SizedBox(height: 8),
