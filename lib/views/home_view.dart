@@ -1,7 +1,7 @@
+import 'package:desain_custom/widgets/bottom.dart';
 import 'package:flutter/material.dart';
-import '../widgets/balance_widget.dart';
+import '../widgets/card_saldo.dart';
 import '../widgets/action_button.dart';
-import '../widgets/service_category.dart';
 
 class HomeView extends StatelessWidget {
   @override
@@ -9,27 +9,32 @@ class HomeView extends StatelessWidget {
     return Scaffold(
       backgroundColor: Colors.grey[100],
       appBar: AppBar(
-        backgroundColor: Colors.purple,
-        title: const Text('OVO') ,
+        backgroundColor: Colors.transparent,
+        title: const Text('OVO',
+        style: TextStyle(color: Colors.purple,
+        fontWeight: FontWeight.bold),) ,
         actions: [
-          IconButton(
-            icon: const Icon(Icons.notifications),
+         IconButton(
+          icon: Icon(Icons.notifications, 
+         color: Colors.purple),
             onPressed: () {},
-          )
+)
+
         ],
       ),
-      body: SingleChildScrollView(
-        child: Column(
-          children: [
-            const SizedBox(height: 20),
-            BalanceCard(),
-            const SizedBox(height: 20),
-            ActionButtons(),
-            const SizedBox(height: 20),
-            ServiceCategory(),
+    body: SingleChildScrollView(
+      child: Column(
+         crossAxisAlignment: CrossAxisAlignment.center,
+        children: [
+         const SizedBox(height: 20),
+         CardSaldo(),
+         const SizedBox(height: 20),
+         ActionButtons(),
+         const SizedBox(height: 20),
           ],
         ),
       ),
+       bottomNavigationBar: MenuBottom(0),
     );
   }
 }
